@@ -22,7 +22,7 @@ func NoCache(c *gin.Context) {
 
 // Options is a middleware function that appends headers
 // for options requests and aborts then exits the middleware
-// chain and ends the request
+// chain and ends the request.
 func Options(c *gin.Context) {
 	if c.Request.Method != "OPTIONS" {
 		c.Next()

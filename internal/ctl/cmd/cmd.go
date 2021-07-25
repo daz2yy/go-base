@@ -5,12 +5,11 @@ import (
 	"io"
 	"os"
 
+	"github.com/daz2yy/go-base/internal/ctl/util/templates"
+	genericapiserver "github.com/daz2yy/go-base/internal/pkg/server"
 	cliflag "github.com/daz2yy/go-base/pkg/flag"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-
-	"github.com/daz2yy/go-base/internal/ctl/util/templates"
-	genericapiserver "github.com/daz2yy/go-base/internal/pkg/server"
 )
 
 // NewDefaultCtlCommand creates the `ctl` command with default arguments.

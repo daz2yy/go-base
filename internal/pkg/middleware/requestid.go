@@ -47,7 +47,7 @@ func GetLoggerConfig(formatter gin.LogFormatter, output io.Writer, skipPaths []s
 	}
 }
 
-// GetDefaultLogFormatterWithRequestID returns gin.LogFormatter with 'RequestID'
+// GetDefaultLogFormatterWithRequestID returns gin.LogFormatter with 'RequestID'.
 func GetDefaultLogFormatterWithRequestID() gin.LogFormatter {
 	return func(param gin.LogFormatterParams) string {
 		var statusColor, methodColor, resetColor string

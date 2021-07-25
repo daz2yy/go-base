@@ -8,15 +8,14 @@ import (
 	"strings"
 	"time"
 
+	"github.com/daz2yy/go-base/internal/pkg/middleware"
 	"github.com/daz2yy/go-base/pkg/core"
+	"github.com/daz2yy/go-base/pkg/log"
 	"github.com/daz2yy/go-base/pkg/version"
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	ginprometheus "github.com/zsais/go-gin-prometheus"
 	"golang.org/x/sync/errgroup"
-
-	"github.com/daz2yy/go-base/internal/pkg/middleware"
-	"github.com/daz2yy/go-base/pkg/log"
 )
 
 type GenericAPIServer struct {
@@ -63,7 +62,7 @@ func (s *GenericAPIServer) InstallMiddlewares() {
 	// necessary middlewares
 	s.Use(middleware.RequestID())
 	s.Use(middleware.Context())
-	//s.Use(limits.RequestSizeLimiter(10))
+	// s.Use(limits.RequestSizeLimiter(10))
 	// ??? 重复 Use 了？
 
 	// install customer middlewares

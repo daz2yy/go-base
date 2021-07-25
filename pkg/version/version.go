@@ -4,17 +4,16 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/gosuri/uitable"
-
 	"github.com/daz2yy/go-base/pkg/json"
+	"github.com/gosuri/uitable"
 )
 
 var (
-	// GitVersion is semantic version
+	// GitVersion is semantic version.
 	GitVersion = "v0.0.0-master+$Format:%h$"
 	// BuildDate in ISO8601 format, output of $(date -u +'%Y-%m-%dT%H:%M:%SZ').
 	BuildDate = "1970-01-01T00:00:00Z"
-	// GitCommit sha1 from git, output of $(git rev-parse HEAD)
+	// GitCommit sha1 from git, output of $(git rev-parse HEAD).
 	GitCommit = "$Format:%H$"
 	// GitTreeState state of git tree, either "clean" or "dirty".
 	GitTreeState = ""
@@ -22,13 +21,13 @@ var (
 
 // Info contains versioning information.
 type Info struct {
-	GitVersion string `json:"gitVersion"`
-	GitCommit string `json:"gitCommit"`
+	GitVersion   string `json:"gitVersion"`
+	GitCommit    string `json:"gitCommit"`
 	GitTreeState string `json:"gitTreeState"`
-	BuildDate string `json:"buildDate"`
-	GoVersion string `json:"goVersion"`
-	Compiler string `json:"compiler"`
-	Platform string `json:"platform"`
+	BuildDate    string `json:"buildDate"`
+	GoVersion    string `json:"goVersion"`
+	Compiler     string `json:"compiler"`
+	Platform     string `json:"platform"`
 }
 
 // String returns info as a human-friendly version string.

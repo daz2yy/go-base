@@ -56,6 +56,7 @@ func initProfiling() error {
 			return fmt.Errorf("unknown profile '%s'", profileName)
 		}
 	}
+
 	return nil
 }
 

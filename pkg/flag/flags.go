@@ -4,9 +4,8 @@ import (
 	goflag "flag"
 	"strings"
 
-	"github.com/spf13/pflag"
-
 	"github.com/daz2yy/go-base/pkg/log"
+	"github.com/spf13/pflag"
 )
 
 // WordSepNormalizeFunc changes all flags from "_" to "-" separators.
@@ -14,6 +13,7 @@ func WordSepNormalizeFunc(f *pflag.FlagSet, name string) pflag.NormalizedName {
 	if strings.Contains(name, "_") {
 		return pflag.NormalizedName(strings.ReplaceAll(name, "_", "-"))
 	}
+
 	return pflag.NormalizedName(name)
 }
 
@@ -25,6 +25,7 @@ func WarnWordSepNormalizeFunc(f *pflag.FlagSet, name string) pflag.NormalizedNam
 
 		return pflag.NormalizedName(newname)
 	}
+
 	return pflag.NormalizedName(name)
 }
 

@@ -10,7 +10,7 @@ import (
 const (
 	KeyRequestID string = "requestID"
 	KeyUsername  string = "username"
-	UsernameKey = "username"
+	UsernameKey         = "username"
 )
 
 // Context is a middleware that injects common prefix fields to gin.Context.
@@ -21,4 +21,3 @@ func Context() gin.HandlerFunc {
 		c.Next()
 	}
 }
-
