@@ -7,10 +7,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/daz2yy/go-base/pkg/log"
-	"github.com/daz2yy/go-base/pkg/util/homedir"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
+
+	"github.com/daz2yy/go-base/pkg/log"
+	"github.com/daz2yy/go-base/pkg/util/homedir"
 )
 
 const (

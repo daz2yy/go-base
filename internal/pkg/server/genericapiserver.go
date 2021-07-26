@@ -8,14 +8,15 @@ import (
 	"strings"
 	"time"
 
-	"github.com/daz2yy/go-base/internal/pkg/middleware"
-	"github.com/daz2yy/go-base/pkg/core"
-	"github.com/daz2yy/go-base/pkg/log"
-	"github.com/daz2yy/go-base/pkg/version"
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	ginprometheus "github.com/zsais/go-gin-prometheus"
 	"golang.org/x/sync/errgroup"
+
+	"github.com/daz2yy/go-base/internal/pkg/middleware"
+	"github.com/daz2yy/go-base/pkg/core"
+	"github.com/daz2yy/go-base/pkg/log"
+	"github.com/daz2yy/go-base/pkg/version"
 )
 
 type GenericAPIServer struct {

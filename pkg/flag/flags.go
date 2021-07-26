@@ -4,8 +4,9 @@ import (
 	goflag "flag"
 	"strings"
 
-	"github.com/daz2yy/go-base/pkg/log"
 	"github.com/spf13/pflag"
+
+	"github.com/daz2yy/go-base/pkg/log"
 )
 
 // WordSepNormalizeFunc changes all flags from "_" to "-" separators.
