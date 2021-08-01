@@ -22,10 +22,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/daz2yy/go-base/pkg/json"
 	"github.com/spf13/pflag"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+
+	"github.com/daz2yy/go-base/pkg/json"
 )
 
 const (

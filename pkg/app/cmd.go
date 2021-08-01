@@ -45,6 +45,8 @@ func (c *Command) cobraCommand() *cobra.Command {
 		}
 	}
 	addHelpCommandFlag(c.usage, cmd.Flags())
+
+	return cmd
 }
 
 func (c *Command) runCommand(cmd *cobra.Command, args []string) {

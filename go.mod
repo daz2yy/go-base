@@ -11,7 +11,7 @@ require (
 	github.com/gosuri/uitable v0.0.4
 	github.com/json-iterator/go v1.1.11
 	github.com/llorllale/go-gitlint v0.0.0-20210608233938-d6303cc52cc5 // indirect
-	github.com/marmotedu/component-base v1.0.1 // indirect
+	github.com/marmotedu/component-base v1.0.1
 	github.com/marmotedu/errors v1.0.2
 	github.com/marmotedu/iam v1.0.4
 	github.com/marmotedu/log v0.0.1
