@@ -6,9 +6,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/daz2yy/go-base/pkg/log"
 	"github.com/gin-gonic/gin"
 	"github.com/mattn/go-isatty"
+
+	"github.com/daz2yy/go-base/pkg/log"
 )
 
 // defaultLogFormatter is the default log format function Logger middleware uses.

@@ -1,8 +1,9 @@
 package options
 
 import (
-	"github.com/daz2yy/go-base/internal/pkg/server"
 	"github.com/spf13/pflag"
+
+	"github.com/daz2yy/go-base/internal/pkg/server"
 )
 
 // FeatureOptions contains configuration items related to API server features.

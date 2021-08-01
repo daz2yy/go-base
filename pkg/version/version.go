@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/daz2yy/go-base/pkg/json"
 	"github.com/gosuri/uitable"
+
+	"github.com/daz2yy/go-base/pkg/json"
 )
 
 var (

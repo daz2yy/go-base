@@ -9,7 +9,7 @@ import (
 
 // Options runs a api server.
 type Options struct {
-	GenericServerRunOptions *genericoptions.ServerRunOptions `json:"server"   mapstructure:"server"`
+	GenericServerRunOptions *genericoptions.ServerRunOptions `json:"server" mapstructure:"server"`
 
 	InsecureServing *genericoptions.InsecureServingOptions `json:"insecure" mapstructure:"insecure"`
 	SecureServing   *genericoptions.SecureServingOptions   `json:"secure"   mapstructure:"secure"`

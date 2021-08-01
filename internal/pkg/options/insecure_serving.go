@@ -5,15 +5,16 @@ import (
 	"net"
 	"strconv"
 
-	"github.com/daz2yy/go-base/internal/pkg/server"
 	"github.com/spf13/pflag"
+
+	"github.com/daz2yy/go-base/internal/pkg/server"
 )
 
 // InsecureServingOptions are for creating an unauthenticated, unauthorized, insecure port.
 // No one should be using these anymore.
 type InsecureServingOptions struct {
 	BindAddress string `json:"bind-address" mapstructure:"bind-address"`
-	BindPort    int    `json:"bind-port" mapstructure:"bind-port"`
+	BindPort    int    `json:"bind-port"    mapstructure:"bind-port"`
 }
 
 // NewInsecureServingOptions is for creating an unauthenticated, unauthorized, insecure port.

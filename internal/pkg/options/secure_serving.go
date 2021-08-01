@@ -3,8 +3,9 @@ package options
 import (
 	"fmt"
 
-	"github.com/daz2yy/go-base/internal/pkg/server"
 	"github.com/spf13/pflag"
+
+	"github.com/daz2yy/go-base/internal/pkg/server"
 )
 
 // SecureServingOptions contains configuration items related to HTTPS server startup.

@@ -4,6 +4,7 @@ import (
 	goflag "flag"
 	"strings"
 
+	"github.com/daz2yy/go-base/pkg/log"
 	"github.com/spf13/pflag"
 )
 
@@ -18,4 +19,10 @@ func WordSepNormalizeFunc(f *pflag.FlagSet, name string) pflag.NormalizedName {
 func InitFlags() {
 	pflag.CommandLine.SetNormalizeFunc(WordSepNormalizeFunc)
 	pflag.CommandLine.AddGoFlagSet(goflag.CommandLine)
+}
+
+func PrintFlags(flags *pflag.FlagSet) {
+	flags.VisitAll(func(flag *pflag.Flag) {
+		log.Debug("Flag value has been parsed")
+	})
 }

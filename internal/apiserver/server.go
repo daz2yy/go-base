@@ -6,7 +6,6 @@ import (
 	"github.com/daz2yy/go-base/internal/apiserver/config"
 	"github.com/daz2yy/go-base/pkg/shutdown"
 	"github.com/daz2yy/go-base/pkg/shutdown/shutdownmanagers/posixsignal"
-	"github.com/marmotedu/iam/pkg/shutdown"
 
 	genericoptions "github.com/daz2yy/go-base/internal/pkg/options"
 	genericapiserver "github.com/daz2yy/go-base/internal/pkg/server"
