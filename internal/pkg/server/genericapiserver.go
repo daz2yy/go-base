@@ -48,6 +48,7 @@ func initGenericAPIServer(s *GenericAPIServer) {
 
 	s.Setup()
 	s.InstallMiddlewares()
+	s.InstallAPIs()
 }
 
 // Setup do some setup work for gin engine.
