@@ -81,7 +81,7 @@ func NewConfig() *Config {
 		EnableProfiling: true,
 		EnableMetrics:   true,
 		Jwt: &JwtInfo{
-			Realm:      "iam jwt",
+			Realm:      "server jwt",
 			Timeout:    1 * time.Hour,
 			MaxRefresh: 1 * time.Hour,
 		},
