@@ -109,19 +109,19 @@ func (s *GenericAPIServer) InstallAPIs() {
 func (s *GenericAPIServer) Run() error {
 	// For scalability, use custom HTTP configuration mode here
 	s.insecureServer = &http.Server{
-		Addr:    s.InsecureServingInfo.Address,
-		Handler: s,
-		// ReadTimeout:    10 * time.Second,
-		// WriteTimeout:   10 * time.Second,
+		Addr:         s.InsecureServingInfo.Address,
+		Handler:      s,
+		ReadTimeout:  10 * time.Second,
+		WriteTimeout: 10 * time.Second,
 		// MaxHeaderBytes: 1 << 20,
 	}
 
 	// For scalability, use custom HTTP configuration mode here
 	s.secureServer = &http.Server{
-		Addr:    s.SecureServingInfo.Address(),
-		Handler: s,
-		// ReadTimeout:    10 * time.Second,
-		// WriteTimeout:   10 * time.Second,
+		Addr:         s.SecureServingInfo.Address(),
+		Handler:      s,
+		ReadTimeout:  10 * time.Second,
+		WriteTimeout: 10 * time.Second,
 		// MaxHeaderBytes: 1 << 20,
 	}
 

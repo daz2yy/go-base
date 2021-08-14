@@ -4,6 +4,7 @@ import (
 	"log"
 
 	"github.com/daz2yy/go-base/internal/apiserver/config"
+	"github.com/daz2yy/go-base/internal/apiserver/store/mysql"
 	"github.com/daz2yy/go-base/pkg/shutdown"
 	"github.com/daz2yy/go-base/pkg/shutdown/shutdownmanagers/posixsignal"
 
@@ -55,10 +56,10 @@ func (s *apiServer) PrepareRun() preparedAPIServer {
 	// s.initRedisStore()
 
 	s.gs.AddShutdownCallback(shutdown.ShutdownFunc(func(string) error {
-		// mysqlStore, _ := mysql.GetMySQLFactoryOr(nil)
-		// if mysqlStore != nil {
-		// 	return mysqlStore.Close()
-		// }
+		mysqlStore, _ := mysql.GetMySQLFactoryOr(nil)
+		if mysqlStore != nil {
+			return mysqlStore.Close()
+		}
 
 		// s.gRPCAPIServer.Close()
 		s.genericAPIServer.Close()

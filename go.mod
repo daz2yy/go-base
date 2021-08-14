@@ -10,7 +10,6 @@ require (
 	github.com/gin-gonic/gin v1.7.2
 	github.com/gosuri/uitable v0.0.4
 	github.com/json-iterator/go v1.1.11
-	github.com/llorllale/go-gitlint v0.0.0-20210608233938-d6303cc52cc5 // indirect
 	github.com/marmotedu/component-base v1.0.1
 	github.com/marmotedu/errors v1.0.2
 	github.com/marmotedu/iam v1.0.4
@@ -31,5 +30,7 @@ require (
 	golang.org/x/crypto v0.0.0-20210711020723-a769d52b0f97 // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/tools v0.1.5
+	gorm.io/driver/mysql v1.0.5
+	gorm.io/gorm v1.21.4
 	k8s.io/klog v1.0.0
 )
